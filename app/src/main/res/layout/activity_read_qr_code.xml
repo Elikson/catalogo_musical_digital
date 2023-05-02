@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ReadQrCodeActivity">
+
+
+
+        <Button
+            android:id="@+id/btn_tocar_qr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tocar"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="42dp"
+            android:visibility="gone"
+            />
+
+    <com.budiyev.android.codescanner.CodeScannerView
+        android:id="@+id/scanner_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:text="Instrumento: detectando..."
+            />
+    </com.budiyev.android.codescanner.CodeScannerView>
+</FrameLayout>
